@@ -48,7 +48,6 @@ export default function Gallery() {
             <div>
           ))}
         </div>
-      </div>
 
       <AnimatePresence>
         {lightboxIndex !== null && (
