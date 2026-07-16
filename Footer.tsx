@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { siteConfig } from '../../config/siteConfig';
+import { siteConfig } from './siteConfig';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 export default function Footer() {
