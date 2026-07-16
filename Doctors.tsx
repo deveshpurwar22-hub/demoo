@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { siteConfig } from "./siteConfig";
-import { PremiumImage } from '../ui/PremiumImage';
 import { RevealOnScroll } from '../ui/RevealOnScroll';
 
 export default function Doctors() {
