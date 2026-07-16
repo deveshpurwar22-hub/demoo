@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, MotionConfig, useReducedMotion, useScroll, useTransform, useMotionValue, useSpring } from 'framer-motion';
-import { siteConfig } from '../../config/siteConfig';
+import { siteConfig } from './siteConfig';
 import { Button } from '../ui';
 import { PremiumImage } from '../ui/PremiumImage';
 import HeroSlideshow from './HeroSlideshow';
