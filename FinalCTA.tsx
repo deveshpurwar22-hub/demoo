@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { siteConfig } from '../../config/siteConfig';
+import { siteConfig } from "./siteConfig";
 import { Button } from '../ui';
 import { ArrowRight, Phone } from 'lucide-react';
 
