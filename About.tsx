@@ -2,7 +2,7 @@ import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion
 import { useRef } from "react";
 import { siteConfig } from "./siteConfig";
 import { VideoShowcase } from "./VideoShowcase";
-import { Button } from "./Button"; // ya correct path
+import { Button } from "./Button"; // 
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 function AboutBlock({
