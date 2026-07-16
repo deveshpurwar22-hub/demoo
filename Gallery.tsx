@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { siteConfig } from "./siteConfig";
-import { RevealOnScroll } from '../ui/RevealOnScroll';
 
 export default function Gallery() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
@@ -46,7 +45,7 @@ export default function Gallery() {
   className="w-full h-full object-cover rounded-2xl"
 />
               </button>
-            </RevealOnScroll>
+            <div>
           ))}
         </div>
       </div>
