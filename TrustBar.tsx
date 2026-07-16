@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { siteConfig } from "./siteConfig";
-import AnimatedCounter from "./AnimatedCounter";
 
 export default function TrustBar() {
   return (
@@ -30,12 +29,9 @@ export default function TrustBar() {
                 className="flex flex-col items-center"
               >
                 <div className="text-4xl md:text-5xl font-semibold mb-3 flex items-center justify-center tracking-tight">
-                  <AnimatedCounter
-                    value={stat.value}
-                    decimals={(stat as { decimals?: number }).decimals ?? 0}
-                  />
-                  <span>{stat.suffix}</span>
-                </div>
+  <span>{stat.value}</span>
+  <span>{stat.suffix}</span>
+</div>
 
                 <div className="text-sm md:text-base font-medium text-primary-foreground/80 uppercase tracking-wider">
                   {stat.label}
