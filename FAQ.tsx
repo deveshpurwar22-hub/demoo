@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { siteConfig } from '../../config/siteConfig';
+import { siteConfig } from './siteConfig';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '../ui';
 
 export default function FAQ() {
