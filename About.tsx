@@ -2,7 +2,6 @@ import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion
 import { useRef } from "react";
 import { siteConfig } from "./siteConfig";
 import { VideoShowcase } from "./VideoShowcase";
-import { Button } from "./Button"; // 
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 function AboutBlock({
@@ -123,18 +122,16 @@ function TechShowcaseBlock() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: 0.65 }}
         >
-          <Button asChild size="lg" className="group">
-            <motion.a
-              href="#services"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="shadow-md hover:shadow-[0_0_28px_rgba(0,131,138,0.5)] transition-shadow duration-300"
-            >
-              {about.secondCta}
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-            </motion.a>
-          </Button>
+          <motion.a
+  href="#services"
+  whileHover={{ scale: 1.03 }}
+  whileTap={{ scale: 0.97 }}
+  transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+  className="inline-flex items-center rounded-xl bg-primary px-6 py-3 text-white font-medium shadow-md hover:shadow-[0_0_28px_rgba(0,131,138,0.5)] transition-all duration-300"
+>
+  {about.secondCta}
+  <ArrowRight className="ml-2 w-4 h-4" />
+</motion.a>
         </motion.div>
       </motion.div>
 
