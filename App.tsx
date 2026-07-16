@@ -3,19 +3,19 @@ import { Route, Switch, Router as WouterRouter } from 'wouter';
 import { MotionConfig } from 'framer-motion';
 import { siteConfig } from './siteConfig';
 
-import Navbar from './components/sections/Navbar';
-import Hero from './components/sections/Hero';
-import TrustBar from './components/sections/TrustBar';
-import Services from './components/sections/Services';
-import About from './components/sections/About';
-import WhyChooseUs from './components/sections/WhyChooseUs';
-import Doctors from './components/sections/Doctors';
-import Gallery from './components/sections/Gallery';
-import Testimonials from './components/sections/Testimonials';
-import BookingForm from './components/sections/BookingForm';
-import FAQ from './components/sections/FAQ';
-import FinalCTA from './components/sections/FinalCTA';
-import Footer from './components/sections/Footer';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import TrustBar from './TrustBar';
+import Services from './Services';
+import About from './About';
+import WhyChooseUs from './WhyChooseUs';
+import Doctors from './Doctors';
+import Gallery from './Gallery';
+import Testimonials from './Testimonials';
+import BookingForm from './BookingForm';
+import FAQ from './FAQ';
+import FinalCTA from './FinalCTA';
+import Footer from './Footer';
 
 function LandingPage() {
   return (
