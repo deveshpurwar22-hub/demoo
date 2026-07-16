@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { siteConfig } from "./siteConfig";
-import { PremiumImage } from '../ui/PremiumImage';
 import { RevealOnScroll } from '../ui/RevealOnScroll';
 
 export default function Gallery() {
@@ -41,11 +40,11 @@ export default function Gallery() {
                 className="block w-full text-left"
                 aria-label={`Open ${img.alt} in fullscreen`}
               >
-                <PremiumImage
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full"
-                />
+                <img
+  src={image.src}
+  alt={image.alt}
+  className="w-full h-full object-cover rounded-2xl"
+/>
               </button>
             </RevealOnScroll>
           ))}
