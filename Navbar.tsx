@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { siteConfig } from './siteConfig';
-import { Button } from "./Button";
 import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
@@ -56,11 +55,14 @@ export default function Navbar() {
               <span className="absolute left-0 -bottom-0.5 h-px w-0 bg-primary transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
-          <Button asChild className="group relative overflow-hidden shadow-md hover:shadow-[0_0_24px_rgba(0,131,138,0.45)] transition-shadow duration-300">
-            <motion.a href="#booking" whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}>
-              {siteConfig.hero.primaryCta}
-            </motion.a>
-          </Button>
+          <motion.a
+  href="#booking"
+  whileHover={{ scale: 1.03 }}
+  whileTap={{ scale: 0.97 }}
+  className="inline-flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-white font-medium shadow-md hover:opacity-90 transition"
+>
+  {siteConfig.hero.primaryCta}
+</motion.a>
         </nav>
 
         {/* Mobile Toggle */}
@@ -108,12 +110,19 @@ export default function Navbar() {
                   </a>
                 ))}
                 <div className="mt-4 pt-6 border-t flex flex-col gap-4">
-                  <Button asChild size="lg" className="w-full">
-                    <a href="#booking" onClick={() => setMobileMenuOpen(false)}>{siteConfig.hero.primaryCta}</a>
-                  </Button>
-                  <Button asChild variant="outline" size="lg" className="w-full">
-                    <a href={`tel:${siteConfig.clinic.phone.replace(/[^0-9]/g, '')}`}>{siteConfig.hero.secondaryCta}</a>
-                  </Button>
+                  <a
+  href="#booking"
+  onClick={() => setMobileMenuOpen(false)}
+  className="w-full rounded-lg bg-primary text-white text-center py-3 font-medium"
+>
+  {siteConfig.hero.primaryCta}
+</a>
+                  <a
+  href={`tel:${siteConfig.clinic.phone.replace(/[^0-9]/g, "")}`}
+  className="w-full rounded-lg border border-gray-300 text-center py-3 font-medium"
+>
+  {siteConfig.hero.secondaryCta}
+</a>
                 </div>
               </div>
             </motion.div>
