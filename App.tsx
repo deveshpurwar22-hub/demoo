@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Route, Switch, Router as WouterRouter } from 'wouter';
 import { MotionConfig } from 'framer-motion';
-import { siteConfig } from './config/siteConfig';
+import { siteConfig } from './siteConfig';
 
 import Navbar from './components/sections/Navbar';
 import Hero from './components/sections/Hero';
