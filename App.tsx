@@ -40,27 +40,34 @@ function LandingPage() {
 }
 
 function App() {
-  // Inject theme config globally at runtime
   useEffect(() => {
-    document.documentElement.style.setProperty('--primary', siteConfig.theme.primaryHSL);
-    document.documentElement.style.setProperty('--primary-foreground', siteConfig.theme.primaryForegroundHSL);
+    document.documentElement.style.setProperty(
+      '--primary',
+      siteConfig.theme.primaryHSL
+    );
+    document.documentElement.style.setProperty(
+      '--primary-foreground',
+      siteConfig.theme.primaryForegroundHSL
+    );
   }, []);
 
-  // Support deep-linking to a section via URL hash (e.g. shared links, back/forward nav)
   useEffect(() => {
     if (!window.location.hash) return;
+
     const id = window.location.hash.slice(1);
     const el = document.getElementById(id);
+
     if (el) {
-      requestAnimationFrame(() => el.scrollIntoView({ behavior: 'auto', block: 'start' }));
+      requestAnimationFrame(() => {
+        el.scrollIntoView({
+          behavior: 'auto',
+          block: 'start',
+        });
+      });
     }
   }, []);
 
   return (
-    // Site-wide: always play our own carefully-scoped entrance/hover animations in full,
-    // regardless of the OS "reduce motion" setting. Continuous decorative loops (Ken Burns,
-    // parallax, shine sweeps) are separately gated behind explicit useReducedMotion() checks
-    // in the components that use them, so accessibility is still respected where it matters.
     <MotionConfig reducedMotion="never">
       <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
         <Switch>
