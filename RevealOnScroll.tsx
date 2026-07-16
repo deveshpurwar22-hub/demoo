@@ -1,5 +1,7 @@
-import { motion, useReducedMotion } from 'framer-motion';
-import type { ReactNode } from 'react';
+import { motion } from "framer-motion";
+import { siteConfig } from "./siteConfig";
+import { PremiumImage } from "./PremiumImage";
+import { RevealOnScroll } from "./RevealOnScroll";
 
 interface RevealOnScrollProps {
   children: ReactNode;
