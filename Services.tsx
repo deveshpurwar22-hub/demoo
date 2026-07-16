@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { siteConfig } from "./siteConfig";
-import { PremiumImage } from '../ui/PremiumImage';
 import { ArrowRight, Check } from 'lucide-react';
 
 export default function Services() {
@@ -40,13 +39,11 @@ export default function Services() {
                 whileHover={{ y: -8 }}
                 className="group relative rounded-[24px] bg-white border border-border/60 overflow-hidden transition-colors duration-300 hover:border-primary/40 hover:shadow-[0_30px_60px_-30px_rgba(15,23,42,0.25)]"
               >
-                <PremiumImage
-                  src={service.image}
-                  alt={service.title}
-                  rounded="rounded-none"
-                  zoomOnGroupHover
-                  className="w-full aspect-[4/3]"
-                />
+                <img
+  src={service.image}
+  alt={service.title}
+  className="w-full h-full object-cover"
+/>
                 <div className="p-8">
                   <div className="w-14 h-14 -mt-16 mb-6 relative rounded-2xl bg-white text-primary flex items-center justify-center shadow-lg ring-1 ring-black/5 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                     <Icon className="w-7 h-7" />
