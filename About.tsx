@@ -1,14 +1,9 @@
-import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import { siteConfig } from "./siteConfig";
-import { VideoShowcase } from './VideoShowcase';
-import { CheckCircle2, ArrowRight } from 'lucide-react';
-<Button asChild size="lg" className="group">
-  <motion.a href="#services">
-    {about.secondCta}
-    <ArrowRight className="ml-2 w-4 h-4" />
-  </motion.a>
-</Button>
+import { VideoShowcase } from "./VideoShowcase";
+import { Button } from "./Button"; // ya correct path
+import { CheckCircle2, ArrowRight } from "lucide-react";
 
 function AboutBlock({
   eyebrow,
