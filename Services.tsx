@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { siteConfig } from '../../config/siteConfig';
+import { siteConfig } from "./siteConfig";
 import { PremiumImage } from '../ui/PremiumImage';
 import { ArrowRight, Check } from 'lucide-react';
 
