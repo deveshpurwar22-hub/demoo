@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { siteConfig } from "./siteConfig";
-import { Button } from '../ui';
+import { Button } from "./Button";
 import { ArrowRight, Phone } from 'lucide-react';
 
 export default function FinalCTA() {
