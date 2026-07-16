@@ -69,7 +69,7 @@ function App() {
 
   return (
     <MotionConfig reducedMotion="never">
-      <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+      <WouterRouter>
         <Switch>
           <Route path="/" component={LandingPage} />
         </Switch>
