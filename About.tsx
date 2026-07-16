@@ -1,6 +1,6 @@
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import { siteConfig } from '../../config/siteConfig';
+import { siteConfig } from "./siteConfig";
 import { PremiumImage } from '../ui/PremiumImage';
 import { VideoShowcase } from '../ui/VideoShowcase';
 import { Button } from '../ui';
