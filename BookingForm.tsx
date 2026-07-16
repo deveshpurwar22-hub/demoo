@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { siteConfig } from '../../config/siteConfig';
+import { siteConfig } from "./siteConfig";
 import { Button } from '../ui';
 import { FloatingInput, FloatingTextarea, FloatingSelect } from '../ui/FloatingField';
 import { CheckCircle2 } from 'lucide-react';
