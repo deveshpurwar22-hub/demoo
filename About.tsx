@@ -1,9 +1,8 @@
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { siteConfig } from "./siteConfig";
-import { PremiumImage } from '../ui/PremiumImage';
-import { VideoShowcase } from '../ui/VideoShowcase';
-import { Button } from '../ui';
+import { VideoShowcase } from './VideoShowcase';
+import { Button } from "./Button";
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 
 function AboutBlock({
@@ -36,7 +35,11 @@ function AboutBlock({
         style={{ y: imageY }}
         className={`max-w-md mx-auto lg:max-w-none ${reverse ? 'order-2 lg:order-2' : 'order-2 lg:order-1'}`}
       >
-        <PremiumImage src={image} alt={title} className="w-full aspect-[4/5]" />
+        <img
+  src={image}
+  alt={title}
+  className="w-full aspect-[4/5] object-cover rounded-3xl"
+/>
       </motion.div>
 
       <motion.div
