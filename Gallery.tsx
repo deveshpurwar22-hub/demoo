@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
-import { siteConfig } from '../../config/siteConfig';
+import { siteConfig } from "./siteConfig";
 import { PremiumImage } from '../ui/PremiumImage';
 import { RevealOnScroll } from '../ui/RevealOnScroll';
 
