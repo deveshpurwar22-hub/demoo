@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { siteConfig } from './siteConfig';
-import { Button } from './ui';
+import { Button } from "./Button";
 import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
