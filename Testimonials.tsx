@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
-import { siteConfig } from '../../config/siteConfig';
+import { siteConfig } from './siteConfig';
 
 function GoogleIcon({ className }: { className?: string }) {
   return (
